@@ -11,12 +11,12 @@ function setup() {
 
   function dispatch() { }
   let initialState = {
-      WeatherStations: {
-        data: weatherStationsMock,
-        StationSelected: 15,
-        forecast:{},
-        weatherStationDetails:{}
-      }
+    WeatherStations: {
+      data: weatherStationsMock,
+      StationSelected: 15,
+      forecast:{},
+      weatherStationDetails:{}
+    }
   };
   let initialStateProps = setInitialState(initialState);
 
@@ -27,7 +27,7 @@ function setup() {
   };
 
   let renderer = TestUtils.createRenderer();
-  renderer.render(<MapBox {...props}  />);
+  renderer.render(<MapBox { ...props }  />);
   let output = renderer.getRenderOutput();
 
   return {
@@ -51,7 +51,7 @@ describe('component ', () => {
         lat: 2222,
         lng: 2222,
         stationId: 22
-      }
+      };
       const { output } = setup();
       const func = output.props.children.props;
 

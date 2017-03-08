@@ -24,7 +24,7 @@ describe('Reducers', () => {
 
     it('Should return the state WeatherStations updated request successfull', () => {
 
-      const data = [weatherStationsMock[0], weatherStationsMock[1]]
+      const data = [weatherStationsMock[0], weatherStationsMock[1]];
 
       const action = {
         type: types.WEATHERSTATIONS_SUCCESS,

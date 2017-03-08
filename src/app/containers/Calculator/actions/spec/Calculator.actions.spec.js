@@ -20,7 +20,7 @@ describe('Calculator', () => {
       expect(expected).to.deep.equal(inputOperation);
 
       const inputDecimal = Actions.inputDecimal();
-      expected = {type: Types.INPUT_DECIMAL}
+      expected = {type: Types.INPUT_DECIMAL};
       expect(expected).to.deep.equal(inputDecimal);
 
       const inputOperator = Actions.inputOperator(Types.SUM);

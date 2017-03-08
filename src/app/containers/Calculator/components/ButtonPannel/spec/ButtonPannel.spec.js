@@ -14,10 +14,10 @@ describe('Calculator / Components', () => {
       const store = configureStore([]);
       const component = mount(
         <Provider store={ store }>
-            <ButtonPannel />
+          <ButtonPannel />
         </Provider>);
 
-        expect(component.find('Button')).to.have.lengthOf(19);
+      expect(component.find('Button')).to.have.lengthOf(19);
     });
 
   });

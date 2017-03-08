@@ -14,12 +14,12 @@ function setup() {
 
   function dispatch() { }
   let initialState = {
-      WeatherStations: {
-        data: weatherStationsMock,
-        forecast:forecastMock.list,
-        weatherStationDetails: helpers.getDataWeatherStation(weatherStationMock),
-        StationSelected: 15
-      }
+    WeatherStations: {
+      data: weatherStationsMock,
+      forecast:forecastMock.list,
+      weatherStationDetails: helpers.getDataWeatherStation(weatherStationMock),
+      StationSelected: 15
+    }
   };
 
   let initialStateProps = setInitialState(initialState);
@@ -31,7 +31,7 @@ function setup() {
     StationSelected: initialStateProps.stationSelected
   };
   let renderer = TestUtils.createRenderer();
-  renderer.render(<WeatherStations {...props}  />);
+  renderer.render(<WeatherStations { ...props }  />);
   let output = renderer.getRenderOutput();
 
   return {

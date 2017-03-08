@@ -39,13 +39,13 @@ describe('shared / Regenerators / RegenerateModelIndex', () => {
       const result = getContainerModels(containersPath);
 
       const containers = fs.readdirSync(containersPath);
-      const expectedResult = containers.map(function(container){
+      const expectedResult = containers.map(function(container) {
 
         let modelPath = path.resolve(containersPath, container, 'models','index.js');
-        try{
+        try {
           fs.accessSync(modelPath);
           return { name:container, import: RegenerateImportLine(container)};
-        }catch(e){
+        } catch (e) {
           return { name: container, import: null };
         }
       });

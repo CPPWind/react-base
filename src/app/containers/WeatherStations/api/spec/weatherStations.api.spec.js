@@ -14,15 +14,15 @@ describe('Actions', () => {
         "params": [],
         "station": {
           "coord": {
-              "lat": 41.761,
-              "lon": -2.4588
+            "lat": 41.761,
+            "lon": -2.4588
           },
           "id": 10912,
           "name": "ED1ZAI-1",
           "status": 30,
           "type": 2
-          }
-        };
+        }
+      };
 
       const returnedData = helpers.getDataWeatherStation(obj);
 

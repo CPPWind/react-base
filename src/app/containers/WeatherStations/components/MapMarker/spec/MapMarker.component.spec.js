@@ -25,10 +25,10 @@ describe('component ', () => {
   describe('MapMarker', () => {
     it('should render correctly', () => {
       let props ={
-          main: weatherStationsMock[0].last.main,
-          zIndex: 2,
-          $hover: true
-        }; 
+        main: weatherStationsMock[0].last.main,
+        zIndex: 2,
+        $hover: true
+      }; 
 
       const { output } = setup(props);
       expect(output.type).to.equal('div');
@@ -37,10 +37,10 @@ describe('component ', () => {
 
     it('should render correctly hover false', () => {
       let props ={
-          main: weatherStationsMock[0].last.main,
-          zIndex: 2,
-          $hover: false
-        }; 
+        main: weatherStationsMock[0].last.main,
+        zIndex: 2,
+        $hover: false
+      }; 
       
       const { output } = setup(props);
       expect(output.type).to.equal('div');

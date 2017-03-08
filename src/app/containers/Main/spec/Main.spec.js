@@ -19,7 +19,7 @@ describe('Container', () => {
       const store = configureStore([]);
       const component = mount(
         <Provider store={ store }>
-            <Main />
+          <Main />
         </Provider>
       );
 
@@ -35,7 +35,7 @@ describe('Container', () => {
       const store = configureStore([], fakeStore);
       const component = mount(
         <Provider store={ store }>
-            <Main />
+          <Main />
         </Provider>
       );
 
@@ -44,7 +44,7 @@ describe('Container', () => {
       setTimeout(() => {
         expect(component.find('Logo')).to.have.lengthOf(1);
         done();
-      }, 1000)
+      }, 1000);
     });
 
   });

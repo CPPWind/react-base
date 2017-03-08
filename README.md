@@ -160,6 +160,3 @@ Anyone and everyone is welcome to contribute, however, if you decide to get invo
 
 **React-Base** is available under the [MIT license](LICENSE).
 
-"734177000000366160" final 3166
-"734177000000348011" 1850
-"734177000000343480" 679

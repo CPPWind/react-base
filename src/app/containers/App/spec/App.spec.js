@@ -9,7 +9,7 @@ function setup() {
   };
 
   let renderer = TestUtils.createRenderer();
-  renderer.render(<App {...props} />);
+  renderer.render(<App { ...props } />);
   let output = renderer.getRenderOutput();
 
   return {

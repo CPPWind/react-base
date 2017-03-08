@@ -39,13 +39,13 @@ describe('shared / Generators / RegenerateReducerIndex', () => {
       const result = getContainerReducers(containersPath);
 
       const containers = fs.readdirSync(containersPath);
-      const expectedResult = containers.map(function(container){
+      const expectedResult = containers.map(function(container) {
 
         let reducerPath = path.resolve(containersPath, container, 'reducers','index.js');
-        try{
+        try {
           fs.accessSync(reducerPath);
           return { name:container, import: RegenerateImportLine(container)};
-        }catch(e){
+        } catch (e) {
           return { name: container, import: null };
         }
       });

@@ -30,7 +30,7 @@ describe('component ', () => {
 
       let item =  helpers.getDataWeatherStation(WeatherStationMock);
 
-      let itemMap = generateMap(item, WeatherStationDetailsModel)
+      let itemMap = generateMap(item, WeatherStationDetailsModel);
       
       let element = itemMap.keySeq().first();
       

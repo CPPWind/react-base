@@ -20,7 +20,7 @@ describe('Calculator / Components', () => {
       const store = configureStore([], fakeStore);
       const component = mount(
         <Provider store={ store }>
-            <Display />
+          <Display />
         </Provider>
       );
 

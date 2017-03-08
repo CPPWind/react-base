@@ -31,7 +31,7 @@ describe('component ', () => {
       expect(output.type).to.equal('div');
     });
 
-     it('should render with data incomplete', () => {
+    it('should render with data incomplete', () => {
       const { output } = setup(weatherStationsMock[1].last.main);
       expect(output.type).to.equal('div');
     });
