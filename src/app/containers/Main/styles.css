@@ -1,33 +1,17 @@
-@import '../../styles/base.css';
 
 .Main {
   align-items: center;
+  background-color: var(--hot-pink);
   display: flex;
   height: 100%;
   justify-content: center;
   position: absolute;
   width: 100%;
-
-  > div {
-    height: 400px;
-    width: var(--logoWidth);
-  }
 }
 
-.txt {
-  color: #666;
-  font-weight: 600;
-  margin: 30px 0;
-  text-align: center;
-
-  img {
-    width: 40px;
-  }
-
-  a {
-    display: block;
-    margin-top: 90px;
-  }
+.Main > div {
+  height: 400px;
+  width: var(--logoWidth);
 }
 
 .buttons {
@@ -35,7 +19,31 @@
   display: flex;
   justify-content: center;
 
-  a {
-    width: 46%;
-  }
+}
+
+.buttons a {
+  width: 46%;
+}
+
+.btng {
+  composes: ph3 from "../../styles/base.css";
+}
+.btngTitle {
+  color: #3cb0fd;
+  composes: f6 from "../../../../node_modules/tachyons/src/_type-scale.css";
+  composes: fw6 from "../../../../node_modules/tachyons/src/_font-weight.css";
+  composes: ttu from "../../../../node_modules/tachyons/src/_text-transform.css";
+  composes: tracked from "../../../../node_modules/tachyons/src/_letter-spacing.css";
+}
+
+.btngBtn {
+  composes: f6 from "../../../../node_modules/tachyons/src/_type-scale.css";
+  composes: grow from "../../../../node_modules/tachyons/src/_hovers.css";
+  composes: no-underline from "../../../../node_modules/tachyons/src/_text-decoration.css";
+  composes: br-pill from "../../../../node_modules/tachyons/src/_border-radius.css";
+  composes: ph3 from "../../../../node_modules/tachyons/src/_spacing.css";
+  composes: pv2 from "../../../../node_modules/tachyons/src/_spacing.css";
+  composes: mb2 from "../../../../node_modules/tachyons/src/_spacing.css";
+  composes: dib from "../../../../node_modules/tachyons/src/_display.css";
+  background-color: olivedrab;
 }

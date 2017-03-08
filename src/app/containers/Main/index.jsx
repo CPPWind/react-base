@@ -1,7 +1,7 @@
 import Immutable from 'immutable';
-import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
-import React, { Component, PropTypes } from 'react';
+import {connect} from 'react-redux';
+import {bindActionCreators} from 'redux';
+import React, {Component, PropTypes} from 'react';
 import fetchRequiredActions from 'base/shared/FetchData';
 
 import Logo from '../../components/Logo';
@@ -19,7 +19,7 @@ export class Main extends Component {
 
   static requiredActions = [Actions.getLogo];
 
-  constructor (props) {
+  constructor(props) {
     super(props);
     this.actions = bindActionCreators(Actions, props.dispatch);
   }
@@ -28,7 +28,7 @@ export class Main extends Component {
     fetchRequiredActions(Main.requiredActions, this.props, 'MainModel');
   }
 
-  render () {
+  render() {
     const LogoData = this.props.MainModel;
 
     return (
@@ -42,6 +42,14 @@ export class Main extends Component {
 
           <div>
             <div className={ styles.txt }>Examples</div>
+
+            <div className={ styles.btng }>
+              <h1 className={ styles.btngTitle }>Basic pill</h1>
+              <a className={ styles.btngBtn} href="#0">Button Text</a>
+              <a className={ styles.btngBtn} href="#0">Button Text</a>
+              <a className={ styles.btngBtn} href="#0">Button Text</a>
+              <a className={ styles.btngBtn} href="#0">Button Text</a>
+            </div>
 
             <div className={ styles.buttons }>
               <LinkButton
@@ -59,7 +67,7 @@ export class Main extends Component {
           <div className={ styles.txt }>
             <div>
               <a href="https://github.com/atSistemas/react-base">
-                <img src="assets/images/github.svg" alt="Github" width="40px" />
+                <img src="assets/images/github.svg" alt="Github" width="40px"/>
               </a>
             </div>
           </div>
@@ -72,5 +80,5 @@ export class Main extends Component {
 Main.propTypes = propTypes;
 
 export default connect(
-  (state) => ({ MainModel: state.Main })
+  (state) => ({MainModel: state.Main})
 )(Main);

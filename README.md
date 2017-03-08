@@ -5,7 +5,6 @@
 
 ![Build-Status](https://travis-ci.org/atSistemas/react-base.svg?branch=master)
 ![Build-Status](https://ci.appveyor.com/api/projects/status/github/atSistemas/react-base?branch=master&svg=true)
-![Coverage](https://s3.amazonaws.com/assets.coveralls.io/badges/coveralls_91.svg)
 ![Npm-Version](https://img.shields.io/badge/npm-6.2.0-blue.svg)
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 
@@ -160,3 +159,7 @@ Anyone and everyone is welcome to contribute, however, if you decide to get invo
 ## License
 
 **React-Base** is available under the [MIT license](LICENSE).
+
+"734177000000366160" final 3166
+"734177000000348011" 1850
+"734177000000343480" 679

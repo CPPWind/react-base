@@ -1,11 +1,13 @@
-:root {
-  --logoWidth: 500px;
-}
+/*:root {*/
+/*--logoWidth: 500px;*/
+/*}*/
+@import '../../../node_modules/tachyons/css/tachyons.min.css';
 
 body {
-  background-color: #fff;
-  color: #111;
+  background-color: #f7f;
+  color: #211;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Helvetica, sans-serif;
   line-height: 1.5;
   margin: 0;
 }
+
